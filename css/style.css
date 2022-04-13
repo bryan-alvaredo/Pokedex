@@ -1,0 +1,450 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #seccionCarta {
+  margin: 0;
+  padding: 0;
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body #seccionCarta div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  width: 14.5rem;
+}
+
+body #seccionCarta div img {
+  position: relative;
+}
+
+body #seccionCarta div #pokeSuperior {
+  bottom: -11.65rem;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-name: pokeSuperior;
+          animation-name: pokeSuperior;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes pokeSuperior {
+  from {
+    bottom: -11.65rem;
+  }
+  to {
+    bottom: 0;
+  }
+}
+
+@keyframes pokeSuperior {
+  from {
+    bottom: -11.65rem;
+  }
+  to {
+    bottom: 0;
+  }
+}
+
+body #seccionCarta div #pokeInferior {
+  bottom: -11.65rem;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-name: pokeInferior;
+          animation-name: pokeInferior;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes pokeInferior {
+  from {
+    bottom: -11.65rem;
+  }
+  to {
+    bottom: -23.3rem;
+  }
+}
+
+@keyframes pokeInferior {
+  from {
+    bottom: -11.65rem;
+  }
+  to {
+    bottom: -23.3rem;
+  }
+}
+
+body #seccionCarta div #demoPointer {
+  position: relative;
+  width: 2.7rem;
+  margin: 0;
+  padding: 2.6rem 1.1rem;
+  border-radius: 12rem;
+  cursor: pointer;
+  right: -4.84rem;
+  bottom: -2.9rem;
+  background-color: none;
+  -webkit-transition: background-color  .3s;
+  transition: background-color  .3s;
+}
+
+body #seccionCarta div #demoPointer:hover {
+  background-color: #ff4747;
+}
+
+body #seccionCarta div #pantalla {
+  top: -5.8rem;
+  z-index: -1;
+  height: 12rem;
+  -webkit-animation-name: pantalla;
+          animation-name: pantalla;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes pantalla {
+  from {
+    height: 12rem;
+    top: -5.8rem;
+  }
+  to {
+    height: 31rem;
+    top: -15rem;
+  }
+}
+
+@keyframes pantalla {
+  from {
+    height: 12rem;
+    top: -5.8rem;
+  }
+  to {
+    height: 31rem;
+    top: -15rem;
+  }
+}
+
+body #seccionCarta .Electrico {
+  background: #f7ffa5;
+  background: radial-gradient(circle, #f7ffa5 15%, #f5ff00 100%);
+}
+
+body #seccionCarta .Planta {
+  background: #c6ffc5;
+  background: radial-gradient(circle, #c6ffc5 15%, #04da00 100%);
+}
+
+body #seccionCarta .Fuego {
+  background: #ffb0b0;
+  background: radial-gradient(circle, #ffb0b0 15%, red 100%);
+}
+
+body #seccionCarta .Agua {
+  background: #adccff;
+  background: radial-gradient(circle, #adccff 15%, #0081ff 100%);
+}
+
+body #seccionCarta .Hielo {
+  background: #d4f6ff;
+  background: radial-gradient(circle, #d4f6ff 15%, #71e1ff 100%);
+}
+
+body #seccionCarta .Lucha {
+  background: #ffbea4;
+  background: radial-gradient(circle, #ffbea4 15%, #ff4800 100%);
+}
+
+body #seccionCarta .Veneno {
+  background: #e1a5ff;
+  background: radial-gradient(circle, #e1a5ff 15%, #b119ff 100%);
+}
+
+body #seccionCarta .Fantasma {
+  background: #b07fc8;
+  background: radial-gradient(circle, #b07fc8 15%, #340057 100%);
+}
+
+body #seccionCarta .Desconocido {
+  background: #ff9395;
+  background: radial-gradient(circle, #ff9395 15%, #3f0093 100%);
+}
+
+body #seccionCarta .Insecto {
+  background: #a0ffc8;
+  background: radial-gradient(circle, #a0ffc8 15%, #004a1f 100%);
+}
+
+body #seccionCarta .Volador {
+  background: #abe1fc;
+  background: radial-gradient(circle, #abe1fc 15%, #598ba4 100%);
+}
+
+body #seccionCarta .Tierra {
+  background: #ffd6a9;
+  background: radial-gradient(circle, #ffd6a9 15%, #8e4e09 100%);
+}
+
+body #seccionCarta .Roca {
+  background: #e3bab0;
+  background: radial-gradient(circle, #e3bab0 15%, #521203 100%);
+}
+
+body #seccionCarta .Psiquico {
+  background: #ffb2d6;
+  background: radial-gradient(circle, #ffb2d6 15%, #c0266e 100%);
+}
+
+body #seccionCarta .Hada {
+  background: #ffa9cb;
+  background: radial-gradient(circle, #ffa9cb 15%, #ff0a6b 100%);
+}
+
+body #seccionCarta .Normal {
+  background: #f2c1cc;
+  background: radial-gradient(circle, #f2c1cc 15%, #81515c 100%);
+}
+
+body #seccionCarta .Acero {
+  background: #e1e6e4;
+  background: radial-gradient(circle, #e1e6e4 15%, #55766e 100%);
+}
+
+body #seccionCarta .Dragon {
+  background: #c0e7eb;
+  background: radial-gradient(circle, #c0e7eb 15%, #006e78 100%);
+}
+
+body #seccionCarta .Oscuro {
+  background: #d5d5d5;
+  background: radial-gradient(circle, #d5d5d5 15%, black 100%);
+}
+
+body #seccionCarta .Siniestro {
+  background: #c7c591;
+  background: radial-gradient(circle, #c7c591 15%, #36215d 100%);
+}
+
+body #seccionCarta article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 1.2rem;
+  width: 23rem;
+}
+
+body #seccionCarta article i {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: 1rem 1rem 0 0;
+  padding: 0.5rem;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+}
+
+body #seccionCarta article i:hover {
+  color: white;
+  background-color: black;
+}
+
+body #seccionCarta article .fotoPortada {
+  width: 15rem;
+  margin-top: -2rem;
+}
+
+body #seccionCarta article .nombrePokemon {
+  font-family: 'Fugaz One', cursive;
+  font-size: 2.3rem;
+  margin: 0;
+  padding: 1rem 0;
+  text-align: center;
+  width: 90%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+body #seccionCarta article .informacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0 0 1rem 0;
+  margin: 0 0 1rem 0;
+  width: 90%;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+body #seccionCarta article .informacion .caracteristicas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  width: 35%;
+}
+
+body #seccionCarta article .informacion .caracteristicas .tituloTipos {
+  font-family: 'Fugaz One', cursive;
+  font-size: 1.15rem;
+  margin: 0;
+}
+
+body #seccionCarta article .informacion .caracteristicas .infoTipos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  width: 100%;
+}
+
+body #seccionCarta article .informacion .caracteristicas .infoTipos .contenedorIcono {
+  width: 30%;
+}
+
+body #seccionCarta article .informacion .caracteristicas .infoTipos .contenedorIcono img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 2rem;
+}
+
+body #seccionCarta article .informacion .caracteristicas .infoTipos .contenedorNombreTipo {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 50%;
+  height: 100%;
+}
+
+body #seccionCarta article .informacion .caracteristicas .infoTipos .contenedorNombreTipo p {
+  font-family: 'Oswald', sans-serif;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin: 0;
+}
+
+body #seccionCarta article .informacion .caracteristicas .tituloCaracteristicas {
+  font-family: 'Fugaz One', cursive;
+  font-size: 1.15rem;
+  margin: 0;
+  padding-top: 1rem;
+}
+
+body #seccionCarta article .informacion .caracteristicas .masInfo {
+  width: 100%;
+}
+
+body #seccionCarta article .informacion .caracteristicas .masInfo p {
+  font-family: 'Oswald', sans-serif;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 0;
+}
+
+body #seccionCarta article .informacion .estadisticas {
+  margin: 0 0.8rem 0 0;
+  width: 45%;
+}
+
+body #seccionCarta article .informacion .estadisticas .tituloEstadisticas {
+  font-family: 'Fugaz One', cursive;
+  font-size: 1.15rem;
+  margin: 0;
+  padding-bottom: 0.5rem;
+}
+
+body #seccionCarta article .informacion .estadisticas .conjuntoEstadisticas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+body #seccionCarta article .informacion .estadisticas .conjuntoEstadisticas .nombresEstadisticas {
+  width: 50%;
+}
+
+body #seccionCarta article .informacion .estadisticas .conjuntoEstadisticas .nombresEstadisticas p {
+  font-family: 'Oswald', sans-serif;
+  margin: 0;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+body #seccionCarta article .informacion .estadisticas .conjuntoEstadisticas .valoresEstadisticas {
+  width: 20%;
+}
+
+body #seccionCarta article .informacion .estadisticas .conjuntoEstadisticas .valoresEstadisticas p {
+  font-family: 'Oswald', sans-serif;
+  margin: 0;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+/*# sourceMappingURL=style.css.map */

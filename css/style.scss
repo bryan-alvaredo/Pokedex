@@ -1,0 +1,324 @@
+///FUNCIONES
+@mixin flex ($direccion) {
+    $dir: $direccion;
+    display: flex;
+    flex-direction: $dir;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    @include flex(column);
+    align-items: center;
+
+    #seccionCarta {
+        margin: 0;
+        padding: 0;
+        width: 95%;
+        @include flex(row);
+        flex-wrap: wrap;
+
+        div {
+            @include flex(column);
+            position: absolute;
+            //height: 11.65rem;
+            width: 14.5rem;
+
+            img {
+                position: relative;
+
+            }
+            #pokeSuperior {
+                bottom: -11.65rem;
+                animation-duration: 0.5s;
+                animation-name: pokeSuperior;
+                animation-iteration-count: 1;
+                animation-fill-mode: forwards
+            }
+            @keyframes pokeSuperior {
+                from {
+                    bottom: -11.65rem;
+                }
+                to {
+                    bottom: 0;
+                }
+            }
+            #pokeInferior {
+                bottom: -11.65rem;
+                animation-duration: 0.5s;
+                animation-name: pokeInferior;
+                animation-fill-mode: forwards
+            }
+            @keyframes pokeInferior {
+                from {
+                    bottom: -11.65rem;
+                }
+                to {
+                    bottom: -23.3rem;
+                }
+            }
+            #demoPointer {
+                position: relative;
+                width: 2.7rem;
+                margin: 0;
+                padding: 2.6rem 1.1rem;
+                border-radius: 12rem;
+                cursor: pointer;
+                right: -4.84rem;
+                bottom: -2.9rem;
+                background-color: none;
+                transition: background-color  .3s;
+            }
+                #demoPointer:hover {
+                    background-color: #ff4747;
+                }
+
+            #pantalla {
+                top: -5.8rem;
+                z-index: -1;
+                height: 12rem;
+                animation-name: pantalla;
+                animation-duration: 0.5s;
+                animation-fill-mode: forwards
+            }
+            @keyframes pantalla {
+                from {
+                    height: 12rem;
+                    top: -5.8rem;
+                }
+                to {
+                    height: 31rem;
+                    top: -15rem;
+                }
+            }
+        }
+
+        ///COLORES CARTAS
+        .Electrico {
+            background: rgb(247,255,165);
+            background: radial-gradient(circle, rgba(247,255,165,1) 15%, rgba(245,255,0,1) 100%);
+        }
+
+        .Planta {
+            background: rgb(198,255,197);
+            background: radial-gradient(circle, rgba(198,255,197,1) 15%, rgba(4,218,0,1) 100%);
+        }
+        .Fuego {
+            background: rgb(255,176,176);
+            background: radial-gradient(circle, rgba(255,176,176,1) 15%, rgba(255,0,0,1) 100%);
+        }
+        .Agua {
+            background: rgb(173,204,255);
+            background: radial-gradient(circle, rgba(173,204,255,1) 15%, rgba(0,129,255,1) 100%);
+        }
+        .Hielo {
+            background: rgb(212,246,255);
+            background: radial-gradient(circle, rgba(212,246,255,1) 15%, rgba(113,225,255,1) 100%);
+        }
+        .Lucha {
+            background: rgb(255,190,164);
+            background: radial-gradient(circle, rgba(255,190,164,1) 15%, rgba(255,72,0,1) 100%);
+        }
+        .Veneno {
+            background: rgb(225,165,255);
+            background: radial-gradient(circle, rgba(225,165,255,1) 15%, rgba(177,25,255,1) 100%);
+        }
+        .Fantasma {
+            background: rgb(176,127,200);
+            background: radial-gradient(circle, rgba(176,127,200,1) 15%, rgba(52,0,87,1) 100%);
+        }
+        .Desconocido {
+            background: rgb(255,147,149);
+            background: radial-gradient(circle, rgba(255,147,149,1) 15%, rgba(63,0,147,1) 100%);
+        }
+        .Insecto {
+            background: rgb(160,255,200);
+            background: radial-gradient(circle, rgba(160,255,200,1) 15%, rgba(0,74,31,1) 100%);
+        }
+        .Volador {
+            background: rgb(171,225,252);
+            background: radial-gradient(circle, rgba(171,225,252,1) 15%, rgba(89,139,164,1) 100%);
+        }
+        .Tierra {
+            background: rgb(255,214,169);
+            background: radial-gradient(circle, rgba(255,214,169,1) 15%, rgba(142,78,9,1) 100%);
+        }
+        .Roca {
+            background: rgb(227,186,176);
+            background: radial-gradient(circle, rgba(227,186,176,1) 15%, rgba(82,18,3,1) 100%);
+        }
+        .Psiquico {
+            background: rgb(255,178,214);
+            background: radial-gradient(circle, rgba(255,178,214,1) 15%, rgba(192,38,110,1) 100%);
+        }
+        .Hada {
+            background: rgb(255,169,203);
+            background: radial-gradient(circle, rgba(255,169,203,1) 15%, rgba(255,10,107,1) 100%);
+        }
+        .Normal {
+            background: rgb(242,193,204);
+            background: radial-gradient(circle, rgba(242,193,204,1) 15%, rgba(129,81,92,1) 100%);
+        }
+        .Acero {
+            background: rgb(225,230,228);
+            background: radial-gradient(circle, rgba(225,230,228,1) 15%, rgba(85,118,110,1) 100%);
+        }
+        .Dragon {
+            background: rgb(192,231,235);
+            background: radial-gradient(circle, rgba(192,231,235,1) 15%, rgba(0,110,120,1) 100%);
+        }
+        .Oscuro {
+            background: rgb(213,213,213);
+            background: radial-gradient(circle, rgba(213,213,213,1) 15%, rgba(0,0,0,1) 100%);
+        }
+        .Siniestro {
+            background: rgb(199,197,145);
+            background: radial-gradient(circle, rgba(199,197,145,1) 15%, rgba(54,33,93,1) 100%);
+        }
+
+        ///INICIO CREACION CARTA
+        article {
+            @include flex(column);
+            align-items: center;
+            border-radius: 1.2rem;
+            width: 23rem;
+
+            i {
+                align-self: flex-end;
+                margin: 1rem 1rem 0 0;
+                padding: 0.5rem;
+                border-radius: 2rem;
+                font-size: 1.2rem;
+            }
+                i:hover {
+                    color: white;
+                    background-color: black;
+                }
+
+            .fotoPortada {
+                width: 15rem;
+                margin-top: -2rem;
+            }
+
+            .nombrePokemon {
+                font-family: 'Fugaz One', cursive;
+                font-size: 2.3rem;
+                margin: 0;
+                padding: 1rem 0;
+                text-align: center;
+                width: 90%;
+                border-top-left-radius: 1rem;
+                border-top-right-radius: 1rem;
+                background-color: rgba(255, 255, 255, 0.700);
+            }
+            
+            .informacion {
+                @include flex(row);
+                justify-content: space-around;
+                padding: 0 0 1rem 0;
+                margin: 0 0 1rem 0;
+                width: 90%;
+                border-bottom-left-radius: 1rem;
+                border-bottom-right-radius: 1rem;
+                background-color: rgba(255, 255, 255, 0.700);
+
+                .caracteristicas {
+                    @include flex(column);
+                    align-items: center;
+                    margin: 0;
+                    width: 35%;
+
+                    .tituloTipos {
+                        font-family: 'Fugaz One', cursive;
+                        font-size: 1.15rem;
+                        margin: 0;
+                    }
+
+                    .infoTipos {
+                        @include flex(row);
+                        justify-content: center;
+                        margin: 0;
+                        width: 100%;
+
+                        .contenedorIcono {
+                            width: 30%;
+
+                            img {
+                                align-self: center;
+                                width: 2rem;
+                            }
+                        }
+
+                        .contenedorNombreTipo {
+                            align-self: center;
+                            justify-content: space-around;
+                            width: 50%;
+                            height: 100%;
+
+                            p {
+                                font-family: 'Oswald', sans-serif;
+                                align-self: flex-start;
+                                margin: 0;
+                            }
+                        }
+                    }
+
+                    .tituloCaracteristicas {
+                        font-family: 'Fugaz One', cursive;
+                        font-size: 1.15rem;
+                        margin: 0;
+                        padding-top: 1rem;
+                    }
+
+                    .masInfo {
+                        width: 100%;
+
+                        p {
+                            font-family: 'Oswald', sans-serif;
+                            align-self: center;
+                            margin: 0;
+                        }
+                    }
+                }
+
+                .estadisticas {
+                    margin: 0 0.8rem 0 0;
+                    width: 45%;
+
+                    .tituloEstadisticas {
+                        font-family: 'Fugaz One', cursive;
+                        font-size: 1.15rem;
+                        margin: 0;
+                        padding-bottom: 0.5rem;
+                    }
+                    .conjuntoEstadisticas {
+                        @include flex(row);
+                        justify-content: space-around;
+                        width: 100%;
+
+                        .nombresEstadisticas {
+                            width: 50%;
+
+                            p {
+                                font-family: 'Oswald', sans-serif;
+                                margin: 0;
+                                align-self: flex-start;
+                            }
+                        }
+
+                        .valoresEstadisticas {
+                            width: 20%;
+
+                            p {
+                                font-family: 'Oswald', sans-serif;
+                                margin: 0;
+                                align-self: flex-end;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
