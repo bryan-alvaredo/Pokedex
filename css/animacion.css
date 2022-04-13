@@ -1,0 +1,66 @@
+#pokedex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  height: 34.6rem;
+}
+
+#pokedex #pokeSuperior {
+  width: 18rem;
+  position: relative;
+  bottom: -9.65rem;
+  -webkit-transition-property: bottom;
+  transition-property: bottom;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+#pokedex #pokeInferior {
+  width: 18rem;
+  position: relative;
+  bottom: -9.65rem;
+  -webkit-transition-property: bottom;
+  transition-property: bottom;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+#pokedex #boton {
+  position: relative;
+  width: 2.7rem;
+  margin: 0;
+  padding: 3.1rem 1.8rem;
+  border-radius: 12rem;
+  cursor: pointer;
+  right: -5.85rem;
+  bottom: 1.1rem;
+  background-color: none;
+  -webkit-transition-property: display, background-color;
+  transition-property: display, background-color;
+  -webkit-transition-duration: 0.15s;
+          transition-duration: 0.15s;
+}
+
+#pokedex #boton:hover {
+  background-color: #ff4747;
+}
+
+#pokedex #pantalla {
+  width: 18rem;
+  position: absolute;
+  z-index: -1;
+  top: 9.9rem;
+  height: 15rem;
+  -webkit-transition-property: top, height;
+  transition-property: top, height;
+  -webkit-transition-duration: 0.5s, 0.5s;
+          transition-duration: 0.5s, 0.5s;
+}
+/*# sourceMappingURL=animacion.css.map */

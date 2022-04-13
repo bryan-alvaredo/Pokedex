@@ -1,0 +1,55 @@
+///FUNCIONES
+@mixin flex ($direccion) {
+    $dir: $direccion;
+    display: flex;
+    flex-direction: $dir;
+}
+
+#pokedex {
+    @include flex(column);
+    align-items: stretch;
+    height: 34.6rem;
+
+    #pokeSuperior {
+        width: 18rem;
+        position: relative;
+        bottom: -9.65rem;
+        transition-property: bottom;
+        transition-duration: 0.5s;
+    }
+
+    #pokeInferior {
+        width: 18rem;
+        position: relative;
+        bottom: -9.65rem;
+        transition-property: bottom;
+        transition-duration: 0.5s;
+    }
+
+    #boton {
+        position: relative;
+        width: 2.7rem;
+        margin: 0;
+        padding: 3.1rem 1.8rem;
+        border-radius: 12rem;
+        cursor: pointer;
+        right: -5.85rem;
+        bottom: 1.1rem;
+        background-color: none;
+        transition-property: display, background-color;
+        transition-duration: 0.15s;
+    }
+        #boton:hover {
+            background-color: #ff4747;
+        }
+
+    #pantalla {
+        width: 18rem;
+        position: absolute;
+        z-index: -1;
+        top: 9.9rem;
+        height: 15rem;
+        transition-property: top, height;
+        transition-duration: 0.5s, 0.5s;
+    }
+}

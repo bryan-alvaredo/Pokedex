@@ -7,6 +7,7 @@
     <title>Pokedex</title>
     <!--ESTILOS-->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animacion.css">
     <!--SWEET ALERT-->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.8/dist/sweetalert2.all.min.js"></script>
     <!--FONT AWESOME-->
@@ -17,15 +18,16 @@
 <body>
 
     <section id="seccionCarta">
-        <div>
+        <div id="pokedex">
             <img id="pokeSuperior" src="./img/pokedexSuperiorSINCristal.png" alt="">
             <img id="pokeInferior" src="./img/pokedexBaseSINCristal.png" alt="">
-            <p id="demoPointer"> </p>
+            <p id="boton"> </p>
             <img id="pantalla" src="./img/pantallaCompleta.png" alt="">
         </div>
         <button onclick="abrirBuscador()">Buscar</button>
     </section>
 
-    <script src="js/main.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/animacion.js"></script>
 </body>
 </html>
