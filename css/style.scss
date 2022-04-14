@@ -108,14 +108,15 @@ body {
             border-radius: 1.2rem;
             width: 23rem;
 
-            i {
+            .fa-trash-can {
                 align-self: flex-end;
                 margin: 1rem 1rem 0 0;
                 padding: 0.5rem;
                 border-radius: 2rem;
                 font-size: 1.2rem;
+                cursor: pointer;
             }
-                i:hover {
+                .fa-trash-can:hover {
                     color: white;
                     background-color: black;
                 }

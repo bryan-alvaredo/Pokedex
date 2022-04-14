@@ -143,16 +143,17 @@ body #seccionCarta article {
   width: 23rem;
 }
 
-body #seccionCarta article i {
+body #seccionCarta article .fa-trash-can {
   -ms-flex-item-align: end;
       align-self: flex-end;
   margin: 1rem 1rem 0 0;
   padding: 0.5rem;
   border-radius: 2rem;
   font-size: 1.2rem;
+  cursor: pointer;
 }
 
-body #seccionCarta article i:hover {
+body #seccionCarta article .fa-trash-can:hover {
   color: white;
   background-color: black;
 }

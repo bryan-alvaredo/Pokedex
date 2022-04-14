@@ -36,26 +36,82 @@
   position: relative;
   width: 2.7rem;
   margin: 0;
-  padding: 3.1rem 1.8rem;
+  padding: 3.2rem 1.8rem;
   border-radius: 12rem;
   cursor: pointer;
   right: -5.85rem;
-  bottom: 1.1rem;
+  bottom: 1.25rem;
   background-color: none;
-  -webkit-transition-property: display, background-color;
-  transition-property: display, background-color;
-  -webkit-transition-duration: 0.15s;
-          transition-duration: 0.15s;
+  -webkit-transition-property: display, background, -webkit-box-shadow;
+  transition-property: display, background, -webkit-box-shadow;
+  transition-property: display, background, box-shadow;
+  transition-property: display, background, box-shadow, -webkit-box-shadow;
 }
 
 #pokedex #boton:hover {
-  background-color: #ff4747;
+  background: #ffa6a6;
+  background: radial-gradient(circle, #ffa6a6 21%, red 100%);
+  -webkit-box-shadow: 0px 0px 18px 1px #FF4747;
+  box-shadow: 0px 0px 18px 1px #FF4747;
+}
+
+#pokedex #infoPantalla {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 18rem;
+  bottom: 20.5rem;
+  height: 9.5rem;
+  z-index: -3;
+}
+
+#pokedex #infoPantalla .fa-square-xmark {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-size: 1.4rem;
+  color: #00c4da;
+  padding-right: 1.5rem;
+  padding-top: 0.5rem;
+  cursor: pointer;
+}
+
+#pokedex #infoPantalla .fa-square-xmark:hover {
+  color: #0096a7;
+}
+
+#pokedex #infoPantalla #textoPantalla {
+  font-family: 'Press Start 2P', cursive;
+  margin: 0;
+  color: #0096a7;
+  width: 11rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+#pokedex #infoPantalla span {
+  display: block;
+  padding-top: 1.5rem;
+}
+
+#pokedex #infoPantalla #textoPantalla:hover {
+  color: #00c4da;
 }
 
 #pokedex #pantalla {
   width: 18rem;
   position: absolute;
-  z-index: -1;
+  z-index: -2;
   top: 9.9rem;
   height: 15rem;
   -webkit-transition-property: top, height;

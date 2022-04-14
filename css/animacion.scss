@@ -30,23 +30,65 @@
         position: relative;
         width: 2.7rem;
         margin: 0;
-        padding: 3.1rem 1.8rem;
+        padding: 3.2rem 1.8rem;
         border-radius: 12rem;
         cursor: pointer;
         right: -5.85rem;
-        bottom: 1.1rem;
+        bottom: 1.25rem;
         background-color: none;
-        transition-property: display, background-color;
-        transition-duration: 0.15s;
+        transition-property: display, background, box-shadow;
     }
         #boton:hover {
-            background-color: #ff4747;
+            background: rgb(255,166,166);
+            background: radial-gradient(circle, rgba(255,166,166,1) 21%, rgba(255,0,0,1) 100%);
+            -webkit-box-shadow: 0px 0px 18px 1px #FF4747; 
+            box-shadow: 0px 0px 18px 1px #FF4747;
         }
+
+    #infoPantalla {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 18rem;
+        bottom: 20.5rem;
+        height: 9.5rem;
+        z-index: -3;
+
+        .fa-square-xmark {
+            align-self: flex-end;
+            font-size: 1.4rem;
+            color: #00c4da;
+            padding-right: 1.5rem;
+            padding-top: 0.5rem;
+            cursor: pointer;
+        }
+            .fa-square-xmark:hover {
+                color: #0096a7;
+            }
+
+        #textoPantalla {
+            font-family: 'Press Start 2P', cursive;
+            margin: 0;
+            color: #0096a7;
+            width: 11rem;
+            text-align: center;
+            cursor: pointer;
+        }
+            span {
+                display: block;
+                padding-top: 1.5rem;
+            }
+            #textoPantalla:hover {
+                color: #00c4da;
+            }
+    }
 
     #pantalla {
         width: 18rem;
         position: absolute;
-        z-index: -1;
+        z-index: -2;
         top: 9.9rem;
         height: 15rem;
         transition-property: top, height;
