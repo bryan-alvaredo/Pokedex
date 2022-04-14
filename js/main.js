@@ -127,7 +127,7 @@ const abrirBuscador = async () => {
         const nombreEstadistica = document.createElement("article");
         nombreEstadistica.classList.add("nombresEstadisticas");
         conjuntoEstadisticas.appendChild(nombreEstadistica);
-        nombreEstadistica.innerHTML = `<p>Salud</p><p>Ataque</p><p>Defensa</p><p>AT Especial</p><p>DF Especial</p><p>Velocidad</p>`;
+        nombreEstadistica.innerHTML = `<p>Salud</p><p>Ataque</p><p>Defensa</p><p>AT Esp.</p><p>DF Esp.</p><p>Velocidad</p>`;
         const valorEstadisitica = document.createElement("article");
         valorEstadisitica.classList.add("valoresEstadisticas");
         conjuntoEstadisticas.appendChild(valorEstadisitica);

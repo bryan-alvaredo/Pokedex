@@ -8,35 +8,40 @@
 #pokedex {
     @include flex(column);
     align-items: stretch;
-    height: 34.6rem;
+    height: 31.37rem;
 
     #pokeSuperior {
-        width: 18rem;
+        width: 15rem;
         position: relative;
         bottom: -9.65rem;
         transition-property: bottom;
         transition-duration: 0.5s;
+        transition-delay: 0s;
     }
 
     #pokeInferior {
-        width: 18rem;
+        width: 15rem;
         position: relative;
         bottom: -9.65rem;
         transition-property: bottom;
         transition-duration: 0.5s;
+        transition-delay: 0s;
     }
 
     #boton {
         position: relative;
+        z-index: 0;
         width: 2.7rem;
         margin: 0;
-        padding: 3.2rem 1.8rem;
+        padding: 2.65rem 1.3rem;
         border-radius: 12rem;
         cursor: pointer;
-        right: -5.85rem;
-        bottom: 1.25rem;
+        right: -4.9rem;
+        bottom: 21.68rem;
         background-color: none;
-        transition-property: display, background, box-shadow;
+        transition-property: z-index;
+        transition-duration: 0s;
+        transition-delay: 0s;
     }
         #boton:hover {
             background: rgb(255,166,166);
@@ -46,15 +51,19 @@
         }
 
     #infoPantalla {
-        position: absolute;
+        position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        width: 18rem;
-        bottom: 20.5rem;
-        height: 9.5rem;
+        width: 15rem;
+        bottom: 28.5rem;
+        height: 10.5rem;
         z-index: -3;
+        opacity: 0%;
+        transition-property: z-index, opacity;
+        transition-duration: 1s, 1s;
+        transition-delay: 0s, 0.5s;
 
         .fa-square-xmark {
             align-self: flex-end;
@@ -71,6 +80,7 @@
         #textoPantalla {
             font-family: 'Press Start 2P', cursive;
             margin: 0;
+            padding-top: 4.5rem;
             color: #0096a7;
             width: 11rem;
             text-align: center;
@@ -86,12 +96,13 @@
     }
 
     #pantalla {
-        width: 18rem;
-        position: absolute;
-        z-index: -2;
-        top: 9.9rem;
-        height: 15rem;
+        width: 15rem;
+        position: relative;
+        z-index: -1;
+        top: -3rem;
+        height: 12.4rem;
         transition-property: top, height;
         transition-duration: 0.5s, 0.5s;
+        transition-delay: 0s, 0s;
     }
 }

@@ -21,14 +21,13 @@
         <div id="pokedex">
             <img id="pokeSuperior" src="./img/pokedexSuperiorSINCristal.png" alt="">
             <img id="pokeInferior" src="./img/pokedexBaseSINCristal.png" alt="">
-            <p id="boton"></p>
-            <div id="infoPantalla">
-                <i class="fa-solid fa-square-xmark"></i>
-                <p onclick="" id="textoPantalla">Clic aquí<span>para buscar</span></p>
-            </div>
             <img id="pantalla" src="./img/pantallaCompleta.png" alt="">
+            <div id="infoPantalla">
+                <i class="fa-solid fa-square-xmark" id="cierraPokedex" onclick="cerrarPokedex()"></i>
+                <p onclick="abrirBuscador()" id="textoPantalla">Clic aquí<span>para buscar</span></p>
+            </div>
+            <p id="boton"></p>
         </div>
-        <button onclick="abrirBuscador()">Buscar</button>
     </section>
 
     <script src="./js/main.js"></script>
