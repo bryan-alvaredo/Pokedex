@@ -88,6 +88,7 @@ const abrirBuscador = async () => {
         carta.appendChild(imgPokemon);
         const nombreTitulo = document.createElement("p");
         nombreTitulo.classList.add("nombrePokemon");
+        nombreTitulo.id = `nombrePokemon${contadorId}`;
         carta.appendChild(nombreTitulo);
         nombreTitulo.innerHTML = nombrePokemon.toUpperCase();
         const informacion = document.createElement("section");

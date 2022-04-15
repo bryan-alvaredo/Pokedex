@@ -8,16 +8,16 @@ botonPokedex.onclick = function() {
     //POKEDEX PARTE SUPERIOR
     pokedexSuperior.style.transitionDuration = `0.5s`;
     pokedexSuperior.style.transitionDelay = `0s`;
-    pokedexSuperior.style.bottom = `-0.4rem`;
+    pokedexSuperior.style.bottom = `-1.05rem`;
     //POKEDEX PARTE INFERIOR
     pokedexInferior.style.transitionDuration = `0.5s`;
     pokedexInferior.style.transitionDelay = `0s`;
-    pokedexInferior.style.bottom = `-18.1rem`;
+    pokedexInferior.style.bottom = `-13.6rem`;
     //PANTALLA POKEDEX
     pokedexPantalla.style.transitionDuration = `0.5s, 0.5s`;
     pokedexPantalla.style.transitionDelay = `0s, 0s`;
-    pokedexPantalla.style.top = `-8.7rem`;
-    pokedexPantalla.style.height = `27rem`;
+    pokedexPantalla.style.top = `-5.7rem`;
+    pokedexPantalla.style.height = `16.6rem`;
     //BOTON POKEDEX
     botonPokedex.style.zIndex = `-4`;
     botonPokedex.style.transitionDuration = `0s`;
@@ -38,17 +38,17 @@ const cerrarPokedex = () => {
     //POKEDEX PARTE SUPERIOR
     pokedexSuperior.style.transitionDuration = `0.5s`;
     pokedexSuperior.style.transitionDelay = `1s`;
-    pokedexSuperior.style.bottom = `-9.65rem`;
+    pokedexSuperior.style.bottom = `-7.6rem`;
     //POKEDEX PARTE INFERIOR
     pokedexInferior.style.transitionDuration = `0.5s`;
     pokedexInferior.style.transitionDelay = `1s`;
-    pokedexInferior.style.bottom = `-9.65rem`;
+    pokedexInferior.style.bottom = `-7.6rem`;
     //PANTALLA POKEDEX
     pokedexPantalla.style.transitionDuration = `0.5s, 0.5s`;
     pokedexPantalla.style.transitionDelay = `1s, 1s`;
-    pokedexPantalla.style.top = `-3rem`;
-    pokedexPantalla.style.height = `12.4rem`;
+    pokedexPantalla.style.top = `-1.65rem`;
+    pokedexPantalla.style.height = `9.1rem`;
     //BOTON POKEDEX
-    botonPokedex.style.zIndex = `0`;
+    botonPokedex.style.zIndex = `2`;
     botonPokedex.style.transitionDelay = `1.5s`;
 }
