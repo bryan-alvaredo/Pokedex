@@ -13,11 +13,44 @@ body {
           align-items: center;
 }
 
-body #seccionCarta {
-  background-color: grey;
-  margin: 0;
-  padding: 0;
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 95%;
+}
+
+body main .fa-circle-half-stroke {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  color: black;
+  margin: 0;
+  padding: 1rem;
+  font-size: 2rem;
+  border-radius: 5rem;
+  cursor: pointer;
+  -webkit-transition: background-color, color, 0.4s;
+  transition: background-color, color, 0.4s;
+}
+
+body main .fa-circle-half-stroke:hover {
+  color: white;
+  background-color: black;
+}
+
+body main #banner {
+  width: 45rem;
+  padding: 2rem 0;
+}
+
+body main section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -25,8 +58,62 @@ body #seccionCarta {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+  padding: 2rem 0;
+}
+
+body main section img {
+  width: 38rem;
+  height: 28rem;
+}
+
+body main section article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
+}
+
+body main section article h1 {
+  margin: 0;
+  font-family: 'Fugaz One', cursive;
+  font-size: 5rem;
+}
+
+body main section article p {
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+  font-size: 3rem;
+}
+
+body #seccionCarta {
+  background-image: url("../img/fondoOscuroCartas.png");
+  margin: 0;
+  padding: 1.5rem 0;
+  width: 95%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (20%)[5];
+      grid-template-columns: repeat(5, 20%);
+  grid-row-gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  border-radius: 1.5rem;
 }
 
 body #seccionCarta .Electrico {
@@ -206,7 +293,7 @@ body #seccionCarta article .informacion .caracteristicas {
       -ms-flex-align: center;
           align-items: center;
   margin: 0;
-  width: 35%;
+  width: 37%;
 }
 
 body #seccionCarta article .informacion .caracteristicas .tituloTipos {
@@ -232,6 +319,7 @@ body #seccionCarta article .informacion .caracteristicas .infoTipos {
 
 body #seccionCarta article .informacion .caracteristicas .infoTipos .contenedorIcono {
   width: 30%;
+  margin: 0;
 }
 
 body #seccionCarta article .informacion .caracteristicas .infoTipos .contenedorIcono img {
@@ -249,7 +337,7 @@ body #seccionCarta article .informacion .caracteristicas .infoTipos .contenedorN
       justify-content: space-around;
   width: 50%;
   height: 100%;
-  margin-left: 0.3rem;
+  margin: 0 0 0 0.3rem;
 }
 
 body #seccionCarta article .informacion .caracteristicas .infoTipos .contenedorNombreTipo p {
@@ -269,6 +357,7 @@ body #seccionCarta article .informacion .caracteristicas .tituloCaracteristicas 
 
 body #seccionCarta article .informacion .caracteristicas .masInfo {
   width: 100%;
+  margin: 0;
 }
 
 body #seccionCarta article .informacion .caracteristicas .masInfo p {
@@ -303,10 +392,12 @@ body #seccionCarta article .informacion .estadisticas .conjuntoEstadisticas {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 100%;
+  margin: 0;
 }
 
 body #seccionCarta article .informacion .estadisticas .conjuntoEstadisticas .nombresEstadisticas {
   width: 50%;
+  margin: 0;
 }
 
 body #seccionCarta article .informacion .estadisticas .conjuntoEstadisticas .nombresEstadisticas p {
@@ -319,6 +410,7 @@ body #seccionCarta article .informacion .estadisticas .conjuntoEstadisticas .nom
 
 body #seccionCarta article .informacion .estadisticas .conjuntoEstadisticas .valoresEstadisticas {
   width: 20%;
+  margin: 0;
 }
 
 body #seccionCarta article .informacion .estadisticas .conjuntoEstadisticas .valoresEstadisticas p {

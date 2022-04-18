@@ -4,6 +4,7 @@ const pokedexPantalla = document.getElementById("pantalla");
 const botonPokedex = document.getElementById("boton");
 const contenidoPantalla = document.getElementById("infoPantalla");
 
+/// POKEDEX
 botonPokedex.onclick = function() {
     //POKEDEX PARTE SUPERIOR
     pokedexSuperior.style.transitionDuration = `0.5s`;
@@ -52,3 +53,5 @@ const cerrarPokedex = () => {
     botonPokedex.style.zIndex = `2`;
     botonPokedex.style.transitionDelay = `1.5s`;
 }
+
+/// MODO OSCURO

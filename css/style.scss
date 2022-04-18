@@ -11,13 +11,75 @@ body {
     @include flex(column);
     align-items: center;
 
-    #seccionCarta {
-        background-color: grey;
-        margin: 0;
-        padding: 0;
+    main {
+        @include flex(column);
+        align-items: center;
         width: 95%;
-        @include flex(row);
-        flex-wrap: wrap;
+
+        .fa-circle-half-stroke {
+            align-self: flex-end;
+            color: black;
+            margin: 0;
+            padding: 1rem;
+            font-size: 2rem;
+            border-radius: 5rem;
+            cursor: pointer;
+            transition: background-color, color, 0.4s;
+        }
+        .fa-circle-half-stroke:hover {
+            color: white;
+            background-color: black;
+        }
+
+        #banner {
+            width: 45rem;
+            padding: 2rem 0;
+        }
+
+        section {
+            @include flex(row);
+            justify-content: center;
+            width: 90%;
+            padding: 2rem 0;
+
+            img {
+                width: 38rem;
+                height: 28rem;
+            }
+
+            article {
+                @include flex(column);
+                align-items: flex-start;
+                justify-content: space-between;
+                width: 50%;
+
+                h1 {
+                    margin: 0;
+                    font-family: 'Fugaz One', cursive;
+                    font-size: 5rem;
+                }
+                
+                p {
+                    margin: 0;
+                    font-family: 'Oswald', sans-serif;
+                    font-size: 3rem;
+                    ///text-align: justify;
+                }
+            }
+        }
+    }
+
+    #seccionCarta {
+        background-image: url('../img/fondoOscuroCartas.png');
+        margin: 0;
+        padding: 1.5rem 0;
+        width: 95%;
+        display: grid;
+        grid-template-columns: repeat(5, 20%);
+        grid-row-gap: 1rem;
+        align-items: center;
+        justify-items: center;
+        border-radius: 1.5rem;
         
         ///COLORES CARTAS
         .Electrico {
@@ -153,7 +215,7 @@ body {
                     @include flex(column);
                     align-items: center;
                     margin: 0;
-                    width: 35%;
+                    width: 37%;
 
                     .tituloTipos {
                         font-family: 'Fugaz One', cursive;
@@ -169,6 +231,7 @@ body {
 
                         .contenedorIcono {
                             width: 30%;
+                            margin: 0;
 
                             img {
                                 align-self: center;
@@ -181,7 +244,7 @@ body {
                             justify-content: space-around;
                             width: 50%;
                             height: 100%;
-                            margin-left: 0.3rem;
+                            margin: 0 0 0 0.3rem;
 
                             p {
                                 font-family: 'Oswald', sans-serif;
@@ -201,6 +264,7 @@ body {
 
                     .masInfo {
                         width: 100%;
+                        margin: 0;
 
                         p {
                             font-family: 'Oswald', sans-serif;
@@ -225,9 +289,11 @@ body {
                         @include flex(row);
                         justify-content: space-around;
                         width: 100%;
+                        margin: 0;
 
                         .nombresEstadisticas {
                             width: 50%;
+                            margin: 0;
 
                             p {
                                 font-family: 'Oswald', sans-serif;
@@ -239,6 +305,7 @@ body {
 
                         .valoresEstadisticas {
                             width: 20%;
+                            margin: 0;
 
                             p {
                                 font-family: 'Oswald', sans-serif;
