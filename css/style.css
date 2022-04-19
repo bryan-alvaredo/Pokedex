@@ -438,4 +438,8 @@ body #seccionCarta article .informacion .estadisticas .conjuntoEstadisticas .val
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
+
+body .tituloInformativo {
+  font-family: 'Oswald', sans-serif;
+}
 /*# sourceMappingURL=style.css.map */

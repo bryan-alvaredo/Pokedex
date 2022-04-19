@@ -61,6 +61,11 @@ const abrirBuscador = async () => {
             if (!value) {
                 return "Debes escribir algo!";
             }
+        },
+        customClass: {
+            title: 'tituloInformativo',
+            input: 'tituloInformativo',
+            inputLabel: 'tituloInformativo'
         }
     })
 
@@ -69,21 +74,16 @@ const abrirBuscador = async () => {
     let datosPokemon = await fetch(`${urlAPI}${inputPokemon}`)
     .then((respuesta) => respuesta.json())
     .then((respuestaFinal) => respuestaFinal).catch(error => "invalido");
-    
-    borrarCartaPokemon = (idCartaPokemon) => {
-        const borrarPokemon = document.getElementById(`${idCartaPokemon}`);
-        seccionCarta.removeChild(borrarPokemon);
-    }
 
     const crearCartaPokemon = (spritePokemon,nombrePokemon,peso,altura,salud,ataque,defensa,ataqueEspecial,defensaEspecial,velocidad,cadenaTipos) => {
         contadorId++;
         const carta = document.createElement("article");
         carta.id = contadorId;
+        seccionCarta.appendChild(carta);
         const imgPokemon = document.createElement("img");
         imgPokemon.classList.add("fotoPortada");
         imgPokemon.src = `${spritePokemon}`;
         imgPokemon.alt = `foto del frente de ${nombrePokemon}`;
-        seccionCarta.appendChild(carta);
         carta.innerHTML = `<i onclick="borrarCartaPokemon(${contadorId})" class="fa-solid fa-trash-can"></i>`;
         carta.appendChild(imgPokemon);
         const nombreTitulo = document.createElement("p");
@@ -133,6 +133,7 @@ const abrirBuscador = async () => {
         valorEstadisitica.classList.add("valoresEstadisticas");
         conjuntoEstadisticas.appendChild(valorEstadisitica);
         valorEstadisitica.innerHTML = `<p>${salud}</p><p>${ataque}</p><p>${defensa}</p><p>${ataqueEspecial}</p><p>${defensaEspecial}</p><p>${velocidad}</p>`;
+        
         const agregarTipos = (cadenaTipos) => {
             for (i=0; i<cadenaTipos.length; i++) {
                 traducirTipo(cadenaTipos,i);
@@ -147,6 +148,7 @@ const abrirBuscador = async () => {
             }
             carta.classList.add(cadenaTipos[0]);
         }
+
         agregarTipos(cadenaTipos);
     }
 
@@ -155,6 +157,9 @@ const abrirBuscador = async () => {
             icon: "error",
             title: `Oops! Parece que ${inputPokemon} no existe`,
             text: "Intenta con otro nombre",
+            customClass: {
+                title: 'tituloInformativo'
+            }
         })
     }
     else {
@@ -202,10 +207,19 @@ const abrirBuscador = async () => {
             text: `Has capturado un ${nombrePokemon}`,
             imageUrl: `${imagenAtrapastePokemon}`,
             imageHeight: 150,
-            imageAlt: `Imagen de Pokemon en 8 Bits`
+            imageAlt: `Imagen de Pokemon en 8 Bits`,
+            customClass: {
+                title: 'tituloInformativo',
+                text: 'tituloInformativo',
+            }
         })
 
         crearCartaPokemon(spritePokemon,nombrePokemon,peso,altura,salud,ataque,defensa,ataqueEspecial,defensaEspecial,velocidad,cadenaTipos);
+    }
+
+    borrarCartaPokemon = (idCartaPokemon) => {
+        const borrarPokemon = document.getElementById(`${idCartaPokemon}`);
+        seccionCarta.removeChild(borrarPokemon);
     }
 }
 

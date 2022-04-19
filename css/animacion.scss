@@ -5,6 +5,7 @@
     flex-direction: $dir;
 }
 
+///POKEDEX
 #pokedex {
     @include flex(column);
     align-items: stretch;
