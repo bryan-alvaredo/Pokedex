@@ -63,19 +63,19 @@ const cerrarPokedex = () => {
 /// MODO OSCURO
 botonModoOscuro.onclick = function () {
     if (modoOscuroOn) {
-        botonModoOscuro.style.color = 'white';
-        cuerpo.style.backgroundImage = 'url("../img/fondoOscuroPrincipal.png")';
-        contenedorCartas.style.backgroundImage = 'url("../img/fondoOscuroCartas.png")';
-        tituloPortada.style.color = 'white';
-        textoPortada.style.color = 'white';
+        botonModoOscuro.style.color = `white`;
+        cuerpo.style.backgroundImage = `url('../img/fondoOscuroPrincipal.png')`;
+        contenedorCartas.style.backgroundImage = `url('../img/fondoOscuroCartas.png')`;
+        tituloPortada.style.color = `white`;
+        textoPortada.style.color = `white`;
         modoOscuroOn = !modoOscuroOn;
     }
     else {
-        botonModoOscuro.style.color = 'black';
-        cuerpo.style.backgroundImage = 'url("../img/fondoClaroPrincipal.png")';
-        contenedorCartas.style.backgroundImage = 'url("../img/fondoClaroCartas.png")';
-        tituloPortada.style.color = 'black';
-        textoPortada.style.color = 'black';
+        botonModoOscuro.style.color = `black`;
+        cuerpo.style.backgroundImage = `url("../img/fondoClaroPrincipal.png")`;
+        contenedorCartas.style.backgroundImage = `url("../img/fondoClaroCartas.png")`;
+        tituloPortada.style.color = `black`;
+        textoPortada.style.color = `black`;
         modoOscuroOn = !modoOscuroOn;
     }
 }
