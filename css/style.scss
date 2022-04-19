@@ -10,6 +10,10 @@ body {
     padding: 2rem 0;
     @include flex(column);
     align-items: center;
+    background-image: url('../img/fondoClaroPrincipal.png');
+    background-size: contain;
+    transition-property: background-image;
+    transition-duration: 0.3s;
 
     main {
         @include flex(column);
@@ -24,11 +28,8 @@ body {
             font-size: 2rem;
             border-radius: 5rem;
             cursor: pointer;
-            transition: background-color, color, 0.4s;
-        }
-        .fa-circle-half-stroke:hover {
-            color: white;
-            background-color: black;
+            transition-property: color;
+            transition-duration: 0.3s;
         }
 
         #banner {
@@ -53,24 +54,29 @@ body {
                 justify-content: space-between;
                 width: 50%;
 
-                h1 {
+                #tituloPortada {
                     margin: 0;
                     font-family: 'Fugaz One', cursive;
                     font-size: 5rem;
+                    color: black;
+                    transition-property: color;
+                    transition-duration: 0.3s;
                 }
-                
-                p {
+
+                #textoPortada {
                     margin: 0;
                     font-family: 'Oswald', sans-serif;
                     font-size: 3rem;
-                    ///text-align: justify;
+                    color: black;
+                    transition-property: color;
+                    transition-duration: 0.3s;
                 }
             }
         }
     }
 
     #seccionCarta {
-        background-image: url('../img/fondoOscuroCartas.png');
+        background-image: url('../img/fondoClaroCartas.png');
         margin: 0;
         padding: 1.5rem 0;
         width: 95%;
@@ -80,6 +86,9 @@ body {
         align-items: center;
         justify-items: center;
         border-radius: 1.5rem;
+        border: 0.2rem solid black;
+        transition-property: background-image;
+        transition-duration: 0.3s;
         
         ///COLORES CARTAS
         .Electrico {

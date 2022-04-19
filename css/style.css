@@ -11,6 +11,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-image: url("../img/fondoClaroPrincipal.png");
+  background-size: contain;
+  -webkit-transition-property: background-image;
+  transition-property: background-image;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 body main {
@@ -36,13 +42,10 @@ body main .fa-circle-half-stroke {
   font-size: 2rem;
   border-radius: 5rem;
   cursor: pointer;
-  -webkit-transition: background-color, color, 0.4s;
-  transition: background-color, color, 0.4s;
-}
-
-body main .fa-circle-half-stroke:hover {
-  color: white;
-  background-color: black;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 body main #banner {
@@ -87,20 +90,30 @@ body main section article {
   width: 50%;
 }
 
-body main section article h1 {
+body main section article #tituloPortada {
   margin: 0;
   font-family: 'Fugaz One', cursive;
   font-size: 5rem;
+  color: black;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
-body main section article p {
+body main section article #textoPortada {
   margin: 0;
   font-family: 'Oswald', sans-serif;
   font-size: 3rem;
+  color: black;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 body #seccionCarta {
-  background-image: url("../img/fondoOscuroCartas.png");
+  background-image: url("../img/fondoClaroCartas.png");
   margin: 0;
   padding: 1.5rem 0;
   width: 95%;
@@ -114,6 +127,11 @@ body #seccionCarta {
           align-items: center;
   justify-items: center;
   border-radius: 1.5rem;
+  border: 0.2rem solid black;
+  -webkit-transition-property: background-image;
+  transition-property: background-image;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 body #seccionCarta .Electrico {

@@ -3,6 +3,12 @@ const pokedexInferior = document.getElementById("pokeInferior");
 const pokedexPantalla = document.getElementById("pantalla");
 const botonPokedex = document.getElementById("boton");
 const contenidoPantalla = document.getElementById("infoPantalla");
+const botonModoOscuro = document.querySelector(".fa-circle-half-stroke");
+const cuerpo = document.querySelector("body");
+const contenedorCartas = document.getElementById("seccionCarta");
+const tituloPortada = document.getElementById("tituloPortada");
+const textoPortada = document.getElementById("textoPortada");;
+let modoOscuroOn = true;
 
 /// POKEDEX
 botonPokedex.onclick = function() {
@@ -55,3 +61,21 @@ const cerrarPokedex = () => {
 }
 
 /// MODO OSCURO
+botonModoOscuro.onclick = function () {
+    if (modoOscuroOn) {
+        botonModoOscuro.style.color = 'white';
+        cuerpo.style.backgroundImage = `url('../img/fondoOscuroPrincipal.png')`;
+        contenedorCartas.style.backgroundImage = `url('../img/fondoOscuroCartas.png')`;
+        tituloPortada.style.color = 'white';
+        textoPortada.style.color = 'white';
+        modoOscuroOn = !modoOscuroOn;
+    }
+    else {
+        botonModoOscuro.style.color = 'black';
+        cuerpo.style.backgroundImage = `url('../img/fondoClaroPrincipal.png')`;
+        contenedorCartas.style.backgroundImage = `url('../img/fondoClaroCartas.png')`;
+        tituloPortada.style.color = 'black';
+        textoPortada.style.color = 'black';
+        modoOscuroOn = !modoOscuroOn;
+    }
+}
